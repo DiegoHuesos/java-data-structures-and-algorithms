@@ -12,7 +12,7 @@ Coursework from ITAM’s *Estructuras de Datos Avanzadas* course (August–Decem
 | [Recursion](1.-CLASE_ESPONDA/EDA-WORKSPACE/src/RecursiveExercises/) | Standalone exercises for practicing recursive methods. |
 | [Friday Java project](1.-CLASE_ESPONDA/EDA_Viernes/) and [introductory lab](2.-LAB_GAMBOA/) | Console, command-line argument, and file I/O exercises. |
 | [Graph notebook](Grafos.ipynb) | Notes and examples on adjacency matrices, shortest paths, and maximum flow. |
-| [Python notes](DAI_Python_Notes.ipynb) | Notes and examples on Python objects and mutability. |
+| [Python fundamentals](python-fundamentals.ipynb) | Notes and examples on Python objects and mutability. |
 
 ## Build and run the Java examples
 
