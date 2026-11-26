@@ -1,14 +1,36 @@
-# EDA : Estructuras de Datos Avanzadas
-This is  my repository with all the stuff from the class "Estructuras de datos avanzadas" (Advanced Abstract Data Type)), ITAM. Around August-December 2019.
+# Java Data Structures and Algorithms
 
-* Teacher's GitHub introduction: [Clase-EDA-2019](https://github.com/Clase-EDA/Clase-EDA-2019)
+Coursework from ITAM’s *Estructuras de Datos Avanzadas* course (August–December 2019). The repository includes Java implementations of data structures and algorithms, programming labs, and Python notebooks.
 
-* To upload homeworks: [Clase-EDA](https://github.com/Clase-EDA)
+## Explore the repository
 
-**EDA_WORKSPACE**
+| Area | What it contains |
+| --- | --- |
+| [Linked lists](1.-CLASE_ESPONDA/EDA-WORKSPACE/src/DataEstructures/List/) | Node and list implementations with a console demo that exercises list reversal. |
+| [Binary trees](1.-CLASE_ESPONDA/EDA-WORKSPACE/src/BinaryTree/) | A binary tree interface and a linked implementation with tree nodes. |
+| [Sorting](1.-CLASE_ESPONDA/EDA-WORKSPACE/src/AlgoritmosDeOrdenamiento/) | Sorting exercises and experiments with merge sort. |
+| [Recursion](1.-CLASE_ESPONDA/EDA-WORKSPACE/src/RecursiveExercises/) | Standalone exercises for practicing recursive methods. |
+| [Friday Java project](1.-CLASE_ESPONDA/EDA_Viernes/) and [introductory lab](2.-LAB_GAMBOA/) | Console, command-line argument, and file I/O exercises. |
+| [Graph notebook](Grafos.ipynb) | Notes and examples on adjacency matrices, shortest paths, and maximum flow. |
+| [Python notes](DAI_Python_Notes.ipynb) | Notes and examples on Python objects and mutability. |
 
-Exercises to remember the basic Abstract Data Types using recursivity:
-* **Lists:**
-    * [Node Class](/DataStructures/List/Node.java)
-    * [List Class](/DataStructures/List/List.java)
-    * [Method tests](/DataStrucutres/List/TestList.java)
+## Build and run the Java examples
+
+Use a JDK with `javac` and `java` on your PATH. The three Java source groups were compiled separately with JDK 8. From the repository root, run this PowerShell example to compile the main workspace and run its linked-list demo.
+
+```powershell
+$source = '1.-CLASE_ESPONDA/EDA-WORKSPACE/src'
+$output = 'build/workspace'
+New-Item -ItemType Directory -Force $output | Out-Null
+$files = (Get-ChildItem -LiteralPath $source -Recurse -Filter '*.java' -File).FullName
+javac -encoding UTF-8 -d $output $files
+if ($LASTEXITCODE -ne 0) { throw 'Java compilation failed' }
+java -cp $output DataEstructures.List.TestList
+```
+
+For the Friday project, use `1.-CLASE_ESPONDA/EDA_Viernes/src` as the source folder. For the introductory lab, use `2.-LAB_GAMBOA`. Give each group its own output directory. The two NetBeans projects can also be opened directly in NetBeans.
+
+## Course references
+
+- [Course repository](https://github.com/Clase-EDA/Clase-EDA-2019)
+- [Course organization](https://github.com/Clase-EDA)
