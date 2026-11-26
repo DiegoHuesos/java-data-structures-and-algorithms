@@ -32,5 +32,4 @@ For the Friday project, use `1.-CLASE_ESPONDA/EDA_Viernes/src` as the source fol
 
 ## Course references
 
-- [Course repository](https://github.com/Clase-EDA/Clase-EDA-2019)
 - [Course organization](https://github.com/Clase-EDA)
